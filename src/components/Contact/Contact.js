@@ -18,7 +18,7 @@ export const Contact = ({ contact }) => {
         checked={contact.completed}
         onChange={handleToggle}
       />
-      <p className={css.text}>{contact.text}</p>
+      <p className={css.text}>{contact.name}</p>
       <button className={css.btn} onClick={handleDelete}>
         <MdClose size={24} />
       </button>

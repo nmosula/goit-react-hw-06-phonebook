@@ -9,7 +9,7 @@ export const ContactForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
     const form = event.target;
-    dispatch(addContact(form.elements.text.value));
+    dispatch(addContact(form.elements.contactName.value));
     form.reset();
   };
 
@@ -18,7 +18,7 @@ export const ContactForm = () => {
       <input
         className={css.field}
         type="text"
-        name="text"
+        name="contactName"
         placeholder="Enter Contact name..."
       />
       <Button type="submit">Add contact</Button>
