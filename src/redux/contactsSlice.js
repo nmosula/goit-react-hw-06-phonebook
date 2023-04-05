@@ -31,7 +31,7 @@ export const contactsSlice = createSlice({
 });
 
 const persistConfig = {
-  key: 'contacts',
+  key: 'PhonebookContacts',
   storage,
 };
 
